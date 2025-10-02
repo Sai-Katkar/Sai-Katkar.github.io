@@ -1,8 +1,9 @@
 body {
     background: #D08C60;
-    font-family: Copperplate, Papyrus, fantasy;
+    font-family: Garamond, serif;
 }
 h1 {
     color: #F4E1C4;
     text-align: center; 
+    font-family: Copperplate, Papyrus, fantasy;
 }
