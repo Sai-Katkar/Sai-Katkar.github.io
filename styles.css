@@ -18,3 +18,12 @@ padding: 20px 10px;
 background: rgb(222, 222, 222); /* pick a color */
 border-radius: 25%;
 }
+
+.project img{
+width: 300px;
+height: 300px;
+margin: 10px;
+border: 2px solid rgb(122, 106, 133); /* choose a color */
+display: block;
+margin: auto;
+}
