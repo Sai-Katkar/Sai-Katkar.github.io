@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Centered content width to match PDF line length */
+
 .header, .content {
   max-width: 720px;
   margin-left: auto;
@@ -54,21 +54,21 @@ hr {
   line-height: 1.45;
 }
 
-/* Bullet lists */
+/* Bullet lists (if any) */
 .section-content ul {
   margin: 8px 0 0 18px;
   padding: 0;
 }
 
+
 a { color: inherit; text-decoration: underline; }
 
-/* Print rules */
+
 @media print {
   body { margin: 12mm; background: #fff; color: #000; }
   .header, .content { max-width: 100%; padding: 0; }
   hr { border-top: 1px solid #000; }
 }
-
 
 @media (max-width: 640px) {
   .header, .content { padding-left: 12px; padding-right: 12px; }
