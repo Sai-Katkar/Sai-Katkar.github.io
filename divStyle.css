@@ -1,6 +1,3 @@
-/* Simple, teacher-style CSS with medium-advanced touches */
-/* White background, black text only (assignment rule) */
-
 * { box-sizing: border-box; }
 
 body {
@@ -9,9 +6,10 @@ body {
   color: #000;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Centered content similar to printed PDF */
+/* Centered content width to match PDF line length */
 .header, .content {
   max-width: 720px;
   margin-left: auto;
@@ -40,7 +38,7 @@ hr {
   margin: 12px 0 18px 0;
 }
 
-/* Section formatting */
+/* Sections */
 .section {
   margin-bottom: 14px;
 }
@@ -56,32 +54,22 @@ hr {
   line-height: 1.45;
 }
 
-/* Bullet list spacing */
+/* Bullet lists */
 .section-content ul {
   margin: 8px 0 0 18px;
   padding: 0;
 }
 
-/* Links: keep black text, underline */
-a {
-  color: inherit;
-  text-decoration: underline;
-}
+a { color: inherit; text-decoration: underline; }
 
-/* Print formatting for close PDF match */
+/* Print rules */
 @media print {
-  body {
-    margin: 12mm;
-    background: #fff;
-  }
-  .header, .content {
-    max-width: 100%;
-    padding: 0;
-  }
+  body { margin: 12mm; background: #fff; color: #000; }
+  .header, .content { max-width: 100%; padding: 0; }
   hr { border-top: 1px solid #000; }
 }
 
-/* Small screen adjustments */
+
 @media (max-width: 640px) {
   .header, .content { padding-left: 12px; padding-right: 12px; }
   .name { font-size: 22px; }
