@@ -1,29 +1,109 @@
+/* Clean, improved look — keeps your original full-width layout */
+
+/* Page Base */
 body {
-    background: #D08C60;
-    font-family: Garamond, serif;
-}
-h1 {
-    color: #F4E1C4;
-    text-align: center; 
-    font-family: Copperplate, Papyrus, fantasy;
-}
-projects { 
-    display:flex; 
-    flex-wrap:wrap; 
-} 
-.project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: rgb(222, 222, 222); /* pick a color */
-border-radius: 25%;
+  background: #F4F1EA;                   /* soft warm beige */
+  font-family: Garamond, serif;
+  margin: 0;
+  padding: 20px;
+  color: #3C2F2F;                        /* deep brown text */
 }
 
-.project img{
-width: 300px;
-height: 300px;
-margin: 10px;
-border: 2px solid rgb(122, 106, 133); /* choose a color */
-display: block;
-margin: auto;
+/* Main Header */
+h1 {
+  color: #8B5E3C;                         /* warm brown accent */
+  text-align: center;
+  font-family: Copperplate, Papyrus, fantasy;
+  margin-bottom: 25px;
+}
+
+/* Section Titles */
+h2 {
+  color: #8B5E3C;
+  border-bottom: 2px solid #C57B57;       /* clay accent underline */
+  padding-bottom: 4px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+/* About, Skills, Contact blocks */
+.about, .skills, .contact {
+  background: rgba(139, 94, 60, 0.10);     /* soft warm tint */
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Resume links */
+.resume-links {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+.resume-links a {
+  color: #8B5E3C;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Projects container — ORIGINAL layout kept (vertical stacking) */
+.projects {
+  margin-top: 20px;
+}
+
+/* Individual project cards */
+.project {
+  background: #FFFFFF;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-left: 5px solid #C57B57;          /* subtle accent stripe */
+}
+
+/* Project title */
+.project h3 {
+  color: #8B5E3C;
+  margin: 0 0 10px;
+}
+
+/* Project image */
+.project img {
+  width: 100%;                              /* responsive & clean */
+  height: auto;
+  max-width: 500px;                         /* doesn’t get too huge */
+  object-fit: cover;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(139, 94, 60, 0.30);
+  display: block;
+}
+
+/* Project description */
+.project p {
+  color: #3C2F2F;
+  line-height: 1.5;
+}
+
+/* Links */
+a {
+  color: #C57B57;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility: keyboard focus outline */
+a:focus-visible {
+  outline: 3px dashed rgba(197,123,87,0.7);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Make images scale nicely on phones */
+@media (max-width: 600px) {
+  .project img {
+    max-width: 100%;
+    max-height: 280px;
+  }
 }
