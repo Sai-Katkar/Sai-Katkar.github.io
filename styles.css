@@ -1,17 +1,17 @@
-/* Clean, improved look — keeps your original full-width layout */
+/* Clean + minimal look — full width — beginner-friendly */
 
 /* Page Base */
 body {
-  background: #F4F1EA;                   /* soft warm beige */
+  background: #F4F1EA;         /* soft warm beige */
   font-family: Garamond, serif;
   margin: 0;
   padding: 20px;
-  color: #3C2F2F;                        /* deep brown text */
+  color: #3C2F2F;              /* deep brown text */
 }
 
 /* Main Header */
 h1 {
-  color: #8B5E3C;                         /* warm brown accent */
+  color: #8B5E3C;
   text-align: center;
   font-family: Copperplate, Papyrus, fantasy;
   margin-bottom: 25px;
@@ -20,24 +20,24 @@ h1 {
 /* Section Titles */
 h2 {
   color: #8B5E3C;
-  border-bottom: 2px solid #C57B57;       /* clay accent underline */
+  margin-bottom: 10px;
   padding-bottom: 4px;
+  border-bottom: 1px solid #C57B57;  /* simple underline */
   width: fit-content;
-  margin-bottom: 12px;
 }
 
-/* About, Skills, Contact blocks */
+/* About, Skills, Contact boxes */
 .about, .skills, .contact {
-  background: rgba(139, 94, 60, 0.10);     /* soft warm tint */
-  padding: 12px 15px;
-  border-radius: 8px;
+  background: rgba(139, 94, 60, 0.08);   /* light tint */
+  padding: 12px;
+  border-radius: 6px;                    /* small radius (natural) */
   margin: 20px 0;
 }
 
 /* Resume links */
 .resume-links {
   display: inline-flex;
-  gap: 10px;
+  gap: 8px;
   margin-top: 5px;
 }
 .resume-links a {
@@ -46,64 +46,62 @@ h2 {
   text-decoration: underline;
 }
 
-/* Projects container — ORIGINAL layout kept (vertical stacking) */
+/* Projects layout — simple vertical list */
 .projects {
   margin-top: 20px;
 }
 
-/* Individual project cards */
+/* Individual Project Cards */
 .project {
   background: #FFFFFF;
-  padding: 15px;
+  padding: 14px;
   margin: 15px 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  border-left: 5px solid #C57B57;          /* subtle accent stripe */
+  border-radius: 6px;
+  border: 1px solid #DDD;   /* simple light border */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* minimal beginner shadow */
 }
 
 /* Project title */
 .project h3 {
   color: #8B5E3C;
-  margin: 0 0 10px;
+  margin-bottom: 8px;
 }
 
 /* Project image */
 .project img {
-  width: 100%;                              /* responsive & clean */
+  width: 100%;
   height: auto;
-  max-width: 500px;                         /* doesn’t get too huge */
+  max-width: 480px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #CCC;  /* simple, not fancy */
   object-fit: cover;
-  margin: 12px 0;
-  border-radius: 8px;
-  border: 1px solid rgba(139, 94, 60, 0.30);
   display: block;
 }
 
 /* Project description */
 .project p {
-  color: #3C2F2F;
   line-height: 1.5;
 }
 
 /* Links */
 a {
-  color: #C57B57;
+  color: #8B5E3C;
 }
 a:hover {
   text-decoration: underline;
 }
 
-/* Accessibility: keyboard focus outline */
+/* Simple focus outline (not fancy) */
 a:focus-visible {
-  outline: 3px dashed rgba(197,123,87,0.7);
-  outline-offset: 3px;
-  border-radius: 4px;
+  outline: 2px solid #C57B57;
+  outline-offset: 2px;
+  border-radius: 3px;
 }
 
-/* Make images scale nicely on phones */
+/* Mobile scaling */
 @media (max-width: 600px) {
   .project img {
-    max-width: 100%;
-    max-height: 280px;
+    max-height: 260px;
   }
 }
