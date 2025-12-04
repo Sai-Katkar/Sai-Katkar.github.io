@@ -1,12 +1,12 @@
-/* Clean + minimal look — full width — beginner-friendly */
+/* Ultra-simple, minimal, stripe-free CSS */
 
 /* Page Base */
 body {
-  background: #F4F1EA;         /* soft warm beige */
+  background: #F4F1EA;       /* light beige */
   font-family: Garamond, serif;
   margin: 0;
   padding: 20px;
-  color: #3C2F2F;              /* deep brown text */
+  color: #3C2F2F;            /* dark brown text */
 }
 
 /* Main Header */
@@ -21,17 +21,16 @@ h1 {
 h2 {
   color: #8B5E3C;
   margin-bottom: 10px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #C57B57;  /* simple underline */
-  width: fit-content;
+  font-size: 1.3rem;
 }
 
 /* About, Skills, Contact boxes */
 .about, .skills, .contact {
-  background: rgba(139, 94, 60, 0.08);   /* light tint */
+  background: rgba(0, 0, 0, 0.05);  /* very light gray, NOT orange */
   padding: 12px;
-  border-radius: 6px;                    /* small radius (natural) */
+  border-radius: 6px;
   margin: 20px 0;
+  border: 1px solid #E5E5E5;       /* soft neutral border */
 }
 
 /* Resume links */
@@ -46,40 +45,40 @@ h2 {
   text-decoration: underline;
 }
 
-/* Projects layout — simple vertical list */
+/* Projects layout */
 .projects {
   margin-top: 20px;
 }
 
-/* Individual Project Cards */
+/* Project Card */
 .project {
   background: #FFFFFF;
   padding: 14px;
   margin: 15px 0;
   border-radius: 6px;
-  border: 1px solid #DDD;   /* simple light border */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* minimal beginner shadow */
+  border: 1px solid #DDD;     /* simple neutral border */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* tiny shadow */
 }
 
-/* Project title */
+/* Project Titles */
 .project h3 {
   color: #8B5E3C;
   margin-bottom: 8px;
 }
 
-/* Project image */
+/* Project Images */
 .project img {
   width: 100%;
   height: auto;
   max-width: 480px;
   margin: 10px 0;
   border-radius: 6px;
-  border: 1px solid #CCC;  /* simple, not fancy */
+  border: 1px solid #CCC;    /* light border, NOT orange */
   object-fit: cover;
   display: block;
 }
 
-/* Project description */
+/* Project text */
 .project p {
   line-height: 1.5;
 }
@@ -92,14 +91,13 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Simple focus outline (not fancy) */
+/* Focus outline (simple) */
 a:focus-visible {
-  outline: 2px solid #C57B57;
+  outline: 2px solid #8B5E3C;
   outline-offset: 2px;
-  border-radius: 3px;
 }
 
-/* Mobile scaling */
+/* Mobile image scaling */
 @media (max-width: 600px) {
   .project img {
     max-height: 260px;
