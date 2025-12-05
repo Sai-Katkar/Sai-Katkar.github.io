@@ -1,12 +1,9 @@
-/* Clean + minimal look — full width — beginner-friendly */
-
-/* Page Base */
 body {
-  background: #F4F1EA;         /* soft warm beige */
+  background: #F4F1EA;         
   font-family: Garamond, serif;
   margin: 0;
   padding: 20px;
-  color: #3C2F2F;              /* deep brown text */
+  color: #3C2F2F;              
 }
 
 /* Main Header */
@@ -22,19 +19,19 @@ h2 {
   color: #8B5E3C;
   margin-bottom: 10px;
   padding-bottom: 4px;
-  border-bottom: 1px solid #C57B57;  /* simple underline */
+  border-bottom: 1px solid #C57B57; 
   width: fit-content;
 }
 
-/* About, Skills, Contact boxes */
+
 .about, .skills, .contact {
-  background: rgba(139, 94, 60, 0.08);   /* light tint */
+  background: rgba(139, 94, 60, 0.08);   
   padding: 12px;
-  border-radius: 6px;                    /* small radius (natural) */
+  border-radius: 6px;                    
   margin: 20px 0;
 }
 
-/* Resume links */
+
 .resume-links {
   display: inline-flex;
   gap: 8px;
@@ -46,7 +43,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Projects layout — simple vertical list */
+
 .projects {
   margin-top: 20px;
 }
@@ -57,11 +54,10 @@ h2 {
   padding: 14px;
   margin: 15px 0;
   border-radius: 6px;
-  border: 1px solid #DDD;   /* simple light border */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* minimal beginner shadow */
-}
+  border: 1px solid #DDD;   
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
 
-/* Project title */
+
 .project h3 {
   color: #8B5E3C;
   margin-bottom: 8px;
@@ -74,12 +70,12 @@ h2 {
   max-width: 480px;
   margin: 10px 0;
   border-radius: 6px;
-  border: 1px solid #CCC;  /* simple, not fancy */
+  border: 1px solid #CCC;  
   object-fit: cover;
   display: block;
 }
 
-/* Project description */
+
 .project p {
   line-height: 1.5;
 }
@@ -92,7 +88,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Simple focus outline (not fancy) */
 a:focus-visible {
   outline: 2px solid #C57B57;
   outline-offset: 2px;
