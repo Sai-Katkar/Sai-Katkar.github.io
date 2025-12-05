@@ -1,14 +1,15 @@
+
 body {
-  background: #F4F1EA;         
+  background: #F4F1EA;      
   font-family: Garamond, serif;
   margin: 0;
   padding: 20px;
-  color: #3C2F2F;              
+  color: #3C2F2F;            
 }
 
 /* Main Header */
 h1 {
-  color: #8B5E3C;
+  color: #8B5E3C;            
   text-align: center;
   font-family: Copperplate, Papyrus, fantasy;
   margin-bottom: 25px;
@@ -19,19 +20,19 @@ h2 {
   color: #8B5E3C;
   margin-bottom: 10px;
   padding-bottom: 4px;
-  border-bottom: 1px solid #C57B57; 
+  border-bottom: 2px solid #C57B57;   
   width: fit-content;
 }
 
-
+/* About, Skills, Contact blocks */
 .about, .skills, .contact {
-  background: rgba(139, 94, 60, 0.08);   
-  padding: 12px;
-  border-radius: 6px;                    
+  background: rgba(139, 94, 60, 0.10); /
+  padding: 12px 15px;
+  border-radius: 8px;
   margin: 20px 0;
 }
 
-
+/* Resume Links */
 .resume-links {
   display: inline-flex;
   gap: 8px;
@@ -43,58 +44,60 @@ h2 {
   text-decoration: underline;
 }
 
-
+/* Projects container */
 .projects {
   margin-top: 20px;
 }
 
-/* Individual Project Cards */
+/* Project Cards */
 .project {
   background: #FFFFFF;
-  padding: 14px;
+  padding: 16px;
   margin: 15px 0;
-  border-radius: 6px;
-  border: 1px solid #DDD;   
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
-
-
-.project h3 {
-  color: #8B5E3C;
-  margin-bottom: 8px;
+  border-radius: 10px;
+  border-left: 5px solid #C57B57;     
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-/* Project image */
+/* Project Titles */
+.project h3 {
+  margin: 0 0 10px;
+  color: #8B5E3C;
+}
+
+/* Project Images */
 .project img {
   width: 100%;
   height: auto;
-  max-width: 480px;
-  margin: 10px 0;
-  border-radius: 6px;
-  border: 1px solid #CCC;  
+  max-width: 500px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(197, 123, 87, 0.6); /
   object-fit: cover;
   display: block;
 }
 
-
+/* Project Text */
 .project p {
   line-height: 1.5;
+  color: #3C2F2F;
 }
 
 /* Links */
 a {
-  color: #8B5E3C;
+  color: #C57B57;   
 }
 a:hover {
   text-decoration: underline;
 }
 
+/* Simple Focus Outline */
 a:focus-visible {
   outline: 2px solid #C57B57;
   outline-offset: 2px;
-  border-radius: 3px;
 }
 
-/* Mobile scaling */
+/* Mobile-friendly images */
 @media (max-width: 600px) {
   .project img {
     max-height: 260px;
